@@ -1,0 +1,101 @@
+# Dependencies
+
+node_modules/
+**/node_modules/
+
+# Environment variables
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+
+dist/
+build/
+**/dist/
+**/build/
+
+# Coverage
+
+coverage/
+.nyc_output/
+
+# Runtime data
+
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+
+.tmp/
+temp/
+tmp/
+
+# Cache
+
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Vite
+
+vite.config.*.timestamp-*
+
+# Local uploads
+
+uploads/
+**/uploads/
+
+# MongoDB local data
+
+data/
+mongodb-data/
+
+# Environment-specific secrets
+
+*.pem
+*.key
+
+# Optional: local Firebase/config files
+
+firebase-debug.log
+.firebaserc
+
+# Vercel
+
+.vercel/
+
+# Netlify
+
+.netlify/
+
+# Misc
+
+*.tgz
+.Dockerfile*
+docker-compose.override.yml
