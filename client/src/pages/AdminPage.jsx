@@ -96,7 +96,7 @@ function AdminPage() {
     if (!confirmed) return;
 
     try {
-      const response = fetch(`${API_URL}/api/admin/inquiries/${id}`, {
+      const response = await fetch(`${API_URL}/api/admin/inquiries/${id}`, {
         method: "DELETE",
         credentials: "include",
       });
@@ -104,6 +104,7 @@ function AdminPage() {
       const data = await response.json();
 
       if (!response.ok) {
+        console.log("no response");
         throw new Error(data.message || "Unable to delete inquiry.");
       }
 
@@ -111,8 +112,9 @@ function AdminPage() {
         current.filter((inquiry) => inquiry._id !== id),
       );
     } catch (error) {
+      console.log(error);
       console.error(error);
-      alert(error.message);
+      alert(error);
     }
   };
 
