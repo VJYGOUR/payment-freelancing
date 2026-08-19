@@ -59,7 +59,7 @@ function AdminPage() {
   };
   const updateStatus = async (id, status) => {
     try {
-      const response = awaitfetch(`${API_URL}/api/admin/inquiries/${id}`, {
+      const response = await fetch(`${API_URL}/api/admin/inquiries/${id}`, {
         method: "PATCH",
         credentials: "include",
         headers: {
